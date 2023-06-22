@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mt. Zion AME Church </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b598561a00.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/bcard.jpg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Prayer</a></li>
+                <li><a href="#">Tithes</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>The Church For Families</p>
+            <h1>Mt. Zion <span>A.M.E</span><br>Church</h1>
+        </div>
+    </div>
+</div>
+<!--  ABOUT SECTION KEITH-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Imgaes/grouppic.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About Us</h1> <!-- Check this needs to be centered-->
+                <p>Mt zion history dates back to 1841. Over the years, we have been blessed with faithful leaders and members who have worked tirelessly to serve our community and spread the gospel. Whether you are new to the faith, looking for a church home, or just curious about Christianity, we invite you to join us for worship and see what our church is all about. Our church is committed to sharing the love and message of Jesus Christ with the world, and we would love for you to join us on this journey. Today, we continue to build on a foundation built by Richard Allen, as we seek to honor God and serve others.Thank you for visiting our website, and we hope to see you soon!</p>
+
+
+               
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('testing')">TESTING</p>
+                    <p class="tab-links"onclick="opentab('testing')">Testing</p>
+                    <p class="tab-links"onclick="opentab('testing')">TESTING</p>
+                    <p class="tab-links"onclick="opentab('testing')">TESTING</p>
+                    <p class="tab-links">TESTING</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>TESTING</span><br>Testing testing testing</li>
+                        <li><span>TESTING</span><br>Testing testing testing</li>
+                        <li><span>TESTING</span><br>Testing testing testing</li>
+                    </ul>
+                    <div class="tab-contents" id="experince">
+                        <ul>
+                            <li><span>TESTING</span><br>Testing testing testing</li>
+                            <li><span>TESTING</span><br>Testing testing testing</li>
+                            <li><span>TESTING</span><br>Testing testing testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+
+</div>
+<!------About the church---->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> About the church</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-cross"></i>
+                <h2>Web Design</h2>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum maiores laudantium nulla. Neque recusandae, pariatur eligendi debitis eius nesciunt illum eveniet dolores iure ipsum et ipsa magni temporibus in aspernatur.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-cross"></i>
+                <h2>Web Design</h2>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum maiores laudantium nulla. Neque recusandae, pariatur eligendi debitis eius nesciunt illum eveniet dolores iure ipsum et ipsa magni temporibus in aspernatur.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-cross"></i>
+                <h2>Web Design</h2>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum maiores laudantium nulla. Neque recusandae, pariatur eligendi debitis eius nesciunt illum eveniet dolores iure ipsum et ipsa magni temporibus in aspernatur.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----portfolio------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/nbg.jpg"> 
+                <div class="layer">
+                    <img src="images/bcard.jpg"> 
+                    <div class="layer">
+                        <h3> Social Media Ap</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, perspiciatis odio nihil consectetur officiis a aliquid! Facilis consectetur velit incidunt explicabo iusto debitis tempora ipsum, officia soluta porro nam ullam?</p>
+                <a href="#"><i class="fas-duotone fa-church"></i></a>
+              </div>
+            </div>
+            <div class="work">
+                <img src="images/arthall.png"> 
+        </div>
+        <div class="work">
+               <img src="images/bcard.jpg"> 
+            </div>
+            <div class="layer">
+                <h3> Social Media Ap</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, perspiciatis odio nihil consectetur officiis a aliquid! Facilis consectetur velit incidunt explicabo iusto debitis tempora ipsum, officia soluta porro nam ullam?</p>
+                <a href="#"><i class="fa-duotone fa-church"></i></a>
+            </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        } 
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+
+    
+
+</script>
+    
+</body>
+</html>
